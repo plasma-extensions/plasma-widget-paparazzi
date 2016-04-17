@@ -1,0 +1,3 @@
+module org.kde.private.spectacle
+DbusAdaptor 1.0 DbusAdaptor.qml
+plugin plasmoidplugin
