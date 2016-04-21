@@ -13,7 +13,7 @@ SpectacleDbusAdaptor::~SpectacleDbusAdaptor(){
 }
 
 void SpectacleDbusAdaptor::captureScreen(int delay) {
-    qDebug() << "Capturing screenn.";
+    qDebug() << "Capturing screen.";
     iface->FullScreen(false);
 }
 

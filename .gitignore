@@ -1,2 +1,8 @@
+# Compiled source #
+###################
+*.directory
+*.bak
+*.db
 .kdev4
 system_panel.kdev4
+

@@ -14,13 +14,13 @@ Item {
 
     property string displayName: i18n("Take an screenshot!")
 
-    Layout.minimumHeight: units.gridUnit * 12
-    Layout.minimumWidth: units.gridUnit * 12
+    Layout.minimumHeight: units.gridUnit * 18
+    Layout.minimumWidth: units.gridUnit * 18
     Layout.preferredHeight: units.gridUnit * 20
     Layout.preferredWidth: units.gridUnit * 20
 
-    Plasmoid.switchWidth: units.gridUnit * 12
-    Plasmoid.switchHeight: units.gridUnit * 12
+    Plasmoid.switchWidth: units.gridUnit * 18
+    Plasmoid.switchHeight: units.gridUnit * 18
     Plasmoid.toolTipMainText: displayName
     Plasmoid.toolTipSubText: ""
 
@@ -71,13 +71,15 @@ Item {
     Component {
         id: actionsDialog
         ColumnLayout {
-            spacing : 20.0
+            spacing : 30.0
             Label {
-                text: "Take an screenshot!"
+                text: "Take an screenshot!"; 
+                font.weight: Font.Light;
+                font.pointSize: 12
             }
 
             RowLayout {
-                spacing : 10.0
+                spacing : 20.0
 
                 id: actionsBox
                 ColumnLayout {
@@ -112,7 +114,7 @@ Item {
                 ColumnLayout {
 
                     Label {
-                        text: "Custom"
+                        text: "Rectangular"
                         Layout.alignment: Qt.AlignHCenter
                     }
                     Button {
