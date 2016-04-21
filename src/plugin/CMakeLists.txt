@@ -7,7 +7,13 @@ set(plasmoidplugin_SRCS
     qmldir
     )
 
-qt5_add_dbus_interface(plasmoidplugin_SRCS org.kde.Spectacle.xml Spectacle)
+# System install dbus spec
+# set(SPECTACLE_DBUS_SPEC /usr/share/dbus-1/interfaces/org.kde.Spectacle.xml)
+
+# Own dbus spec
+set(SPECTACLE_DBUS_SPEC org.kde.Spectacle.xml)
+    
+qt5_add_dbus_interface(plasmoidplugin_SRCS ${SPECTACLE_DBUS_SPEC} Spectacle)
 
 add_library(plasmoidplugin SHARED ${plasmoidplugin_SRCS})
 

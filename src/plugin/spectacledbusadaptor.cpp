@@ -2,7 +2,11 @@
 
 SpectacleDbusAdaptor::SpectacleDbusAdaptor(QObject *parent) : QObject(parent)
 {
-    iface = new org::kde::Spectacle(QString(), QString(), QDBusConnection::sessionBus(), this);
+      if (!QDBusConnection::sessionBus().isConnected()) {
+        qWarning("Cannot connect to the D-Bus session bus.\n"
+                 "Please check your system settings and try again.\n");
+    }
+    iface = new org::kde::Spectacle("org.kde.Spectacle", "/", QDBusConnection::sessionBus(), this);
 }
 
 SpectacleDbusAdaptor::~SpectacleDbusAdaptor(){
@@ -20,5 +24,5 @@ void SpectacleDbusAdaptor::captureWindow(int delay) {
 
 void SpectacleDbusAdaptor::captureArea(int delay) {
     qDebug() << "Capturing area.";
-    iface->RectangularRegion(false);
+    iface->ActiveWindow();
 }
