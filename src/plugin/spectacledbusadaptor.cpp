@@ -24,5 +24,5 @@ void SpectacleDbusAdaptor::captureWindow(int delay) {
 
 void SpectacleDbusAdaptor::captureArea(int delay) {
     qDebug() << "Capturing area.";
-    iface->ActiveWindow();
+    iface->RectangularRegion(false);
 }
