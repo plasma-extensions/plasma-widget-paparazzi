@@ -12,17 +12,17 @@ SpectacleDbusAdaptor::SpectacleDbusAdaptor(QObject *parent) : QObject(parent)
 SpectacleDbusAdaptor::~SpectacleDbusAdaptor(){
 }
 
-void SpectacleDbusAdaptor::captureScreen(int delay) {
+void SpectacleDbusAdaptor::captureScreen(bool include_pointer) {
     qDebug() << "Capturing screen.";
-    iface->FullScreen(false);
+    iface->FullScreen(include_pointer);
 }
 
-void SpectacleDbusAdaptor::captureWindow(int delay) {
+void SpectacleDbusAdaptor::captureWindow(bool include_pointer) {
     qDebug() << "Capturing window.";
-    iface->ActiveWindow(true, false);
+    iface->ActiveWindow(true, include_pointer);
 }
 
-void SpectacleDbusAdaptor::captureArea(int delay) {
+void SpectacleDbusAdaptor::captureArea(bool include_pointer) {
     qDebug() << "Capturing area.";
-    iface->RectangularRegion(false);
+    iface->RectangularRegion(include_pointer);
 }

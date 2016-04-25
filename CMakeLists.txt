@@ -18,8 +18,6 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Plasma)
 add_subdirectory(plugin)
 
 
-ADD_CUSTOM_TARGET(org.kde.plasma.spectacle_widget SOURCES ${QML_SRC})
-
-plasma_install_package(package org.kde.plasma.spectacle_widget)
+plasma_install_package(plasmoid org.plasma-light.spectacle)
 
 install( DIRECTORY image/breeze DESTINATION ${ICON_INSTALL_DIR})

@@ -14,9 +14,9 @@ public:
     ~SpectacleDbusAdaptor();
 
 public Q_SLOTS:
-    void captureScreen(int delay);
-    void captureWindow(int delay);
-    void captureArea(int delay);
+    void captureScreen(bool include_pointer);
+    void captureWindow(bool include_pointer);
+    void captureArea(bool include_pointer);
 
 private:
     org::kde::Spectacle *iface;
