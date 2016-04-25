@@ -17,7 +17,7 @@ ColumnLayout {
   }
     
   Label {
-      text: "Take an screenshot!"; 
+      text: "Take a screenshot!"; 
       font.weight: Font.Light;
       font.pointSize: 12
   }

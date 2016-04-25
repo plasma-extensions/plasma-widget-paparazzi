@@ -21,3 +21,4 @@ add_subdirectory(plugin)
 plasma_install_package(plasmoid org.plasma-light.spectacle)
 
 install( DIRECTORY image/breeze DESTINATION ${ICON_INSTALL_DIR})
+install( DIRECTORY image/breeze-dark DESTINATION ${ICON_INSTALL_DIR})

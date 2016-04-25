@@ -18,7 +18,7 @@ Item {
     Layout.fillWidth: true
     Layout.fillHeight: true
     
-    property string displayName: i18n("Take an screenshot!")
+    property string displayName: i18n("Take a screenshot!")
 
     Layout.minimumHeight: units.gridUnit * 18
     Layout.minimumWidth: units.gridUnit * 18
