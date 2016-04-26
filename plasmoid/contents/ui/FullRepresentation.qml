@@ -34,7 +34,7 @@ ColumnLayout {
 
 	  }
 	  Button {
-	      iconSource: "view-fullscreen"
+	      iconName: "view-fullscreen"
 	      Layout.alignment: Qt.AlignHCenter
 	      tooltip : "Full screen capture."
 
@@ -51,7 +51,7 @@ ColumnLayout {
 	      Layout.alignment: Qt.AlignHCenter
 	  }
 	  Button {
-	      iconSource: "window"
+	      iconName: "window"
 	      Layout.alignment: Qt.AlignHCenter
 	      tooltip : "Only the active window."
 
@@ -68,7 +68,7 @@ ColumnLayout {
 	      Layout.alignment: Qt.AlignHCenter
 	  }
 	  Button {
-	      iconSource: "select-rectangular"
+	      iconName: "select-rectangular"
 	      Layout.alignment: Qt.AlignHCenter
 	      tooltip : "From a rectangular area."
 
@@ -87,6 +87,7 @@ ColumnLayout {
     }
 
     function delayCall( interval, callback ) {
+      console.debug(interval);
       interval = interval * 1000;
       var delayCaller = delayCallerComponent.createObject( null, { "interval": interval } );
       delayCaller.triggered.connect( function () {
