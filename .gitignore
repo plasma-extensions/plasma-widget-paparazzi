@@ -3,6 +3,6 @@
 *.directory
 *.bak
 *.db
-.kdev4
+*.kdev4
 system_panel.kdev4
 
