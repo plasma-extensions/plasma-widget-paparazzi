@@ -7,7 +7,7 @@ IF(NOT GETTEXT_MSGFMT_EXECUTABLE)
 ------")
 ELSE(NOT GETTEXT_MSGFMT_EXECUTABLE)
  
-        SET(catalogname plasma_applet_org.kde.plasma.systempanel)
+        SET(catalogname plasma_applet_org.plasma-light.spectacle)
  
         ADD_CUSTOM_TARGET(translations ALL)
  

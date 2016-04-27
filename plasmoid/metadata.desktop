@@ -1,7 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Spectacle Widget
+Name[es]=Spectacle Widget
 Comment=Plasma5 applet that allows you to take system screenshots using Spectacle Api.
+Comment[es]=Componente de Plasma5 que le permite tomar capturas de pantalla utilizando la API de Spectacle.
 Type=Service
 Icon=spectacle-tray
 #X-KDE-ParentApp=
@@ -11,6 +13,7 @@ X-KDE-PluginInfo-License=GPL3
 X-KDE-PluginInfo-Name=org.plasma-light.spectacle
 X-KDE-PluginInfo-Version=0.2.0
 X-KDE-PluginInfo-Website=https://github.com/plasma-light/plasma-widget-spectacle
+X-KDE-PluginInfo-Category=Utilities
 X-KDE-ServiceTypes=Plasma/Applet
 X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=ui/main.qml

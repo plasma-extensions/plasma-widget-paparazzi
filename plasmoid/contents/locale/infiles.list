@@ -1,7 +1,0 @@
-./config/config.qml
-./locale/rc.cpp
-./ui/CompactRepresentation.qml
-./ui/ConfigGeneral.qml
-./ui/FullRepresentation.qml
-./ui/main.qml
-rc.cpp

@@ -2,8 +2,8 @@ import QtQuick 2.2
 import QtQuick.Controls 1.0
 import QtQuick.Layouts 1.0
 
-Item {
 
+Item {
     property alias cfg_showPointer: showPointer.checked
     property alias cfg_delayTime: delayTime.value
 
@@ -24,22 +24,24 @@ Item {
         }
 
         CheckBox {
-            id: showPointer
-            Layout.columnSpan: 3
-            text: i18n('Include mouse pointer')
+	  id: showPointer
+	  Layout.columnSpan: 3
+	  text: i18n("Include mouse pointer")  
         }
 
         Label {
-            text: i18n('Delay time:')
+            text: i18n("Delay time:")
         }
 
         SpinBox {
-            id: delayTime
-            suffix: i18nc('Abbreviation for seconds', 'sec')
-	    minimumValue: 0
-	    maximumValue: 100
-	    stepSize: 1
-	    Layout.columnSpan: 2
+	  id: delayTime
+	  minimumValue: 0
+	  maximumValue: 100
+	  
+	  suffix: i18nc("Abbreviation for seconds", "sec")  
+	  
+	  stepSize: 1
+	  Layout.columnSpan: 2
         }
     }
 }

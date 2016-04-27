@@ -17,7 +17,7 @@ ColumnLayout {
   }
     
   Label {
-      text: "Take a screenshot!"; 
+      text: i18n("Take a screenshot!"); 
       font.weight: Font.Light;
       font.pointSize: 12
   }
@@ -29,14 +29,14 @@ ColumnLayout {
       ColumnLayout {
 	  Layout.alignment: Qt.AlignHCenter
 	  Label {
-	      text: "Full screen"
+	      text: i18n("Full screen")
 	      Layout.alignment: Qt.AlignHCenter
 
 	  }
 	  Button {
 	      iconName: "view-fullscreen"
 	      Layout.alignment: Qt.AlignHCenter
-	      tooltip : "Full screen capture."
+	      tooltip : i18n("Full screen capture.")
 
 	      onClicked: delayCall( plasmoid.configuration.delayTime, 
 				    function () {
@@ -47,13 +47,13 @@ ColumnLayout {
       ColumnLayout {
 
 	  Label {
-	      text: "Window"
+	      text: i18n("Window")
 	      Layout.alignment: Qt.AlignHCenter
 	  }
 	  Button {
 	      iconName: "window"
 	      Layout.alignment: Qt.AlignHCenter
-	      tooltip : "Only the active window."
+	      tooltip : i18n("Only the active window.")
 
 	      onClicked: delayCall( plasmoid.configuration.delayTime, 
 				    function () {
@@ -64,13 +64,13 @@ ColumnLayout {
       ColumnLayout {
 
 	  Label {
-	      text: "Rectangular"
+	      text: i18n("Rectangular")
 	      Layout.alignment: Qt.AlignHCenter
 	  }
 	  Button {
 	      iconName: "select-rectangular"
 	      Layout.alignment: Qt.AlignHCenter
-	      tooltip : "From a rectangular area."
+	      tooltip : i18n("From a rectangular area.")
 
 	      onClicked: delayCall( plasmoid.configuration.delayTime, 
 				    function () {

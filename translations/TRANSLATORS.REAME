@@ -20,17 +20,15 @@ Translation instructions:
 
 5.- Open the metadata.desktop file and you'll find a couple of lines like the following:
 
-        Name=System panel
-        Comment=Plasma5 applet that displays a panel with a set of system actions
+        Name=Spectacle Widget
+        Comment=Plasma5 applet that allows you to take system screenshots using Spectacle Api.
 
     Then, add your language in the same way as it has been done for other languages such as:
 
-        Name[es]=Panel de sistema
-        Name[fr]=Panneau système
-        Comment[es]=Plasma5 applet que muestra un panel con acciones de sistema
-        Comment[fr]=Applet Plasma5 qui affiche un ensemble d'actions système
+        Name[es]=Spectacle Widget
+        Comment[es]=Componente de Plasma5 que le permite tomar capturas de pantalla utilizando la API de Spectacle.
 
-6.- Save it all and send it to musikolo[AT]hotmail{DOT}com, where
+6.- Save it all and send it to azubieta90[AT]gmail{DOT}com, where
     [AT] is '@' character and {DOT} is '.' character.
 
 Thanks a lot for your contribution!

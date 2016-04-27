@@ -1,6 +1,6 @@
 #!/bin/sh
-BUGADDR="http://kde-look.org/content/show.php/plasma5-applets-system-panel?content=175309"  # MSGID-Bugs
-PROJECT="systempanel"   # project name
+BUGADDR="https://github.com/plasma-light/plasma-widget-spectacle/issues"  # MSGID-Bugs
+PROJECT="spectacle"   # project name
 WDIR=`pwd`              # working dir
 BASEDIR="$WDIR/.."      # root of translatable sources
 
