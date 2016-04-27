@@ -6,6 +6,7 @@ import QtQuick.Layouts 1.0
 Item {
     property alias cfg_showPointer: showPointer.checked
     property alias cfg_delayTime: delayTime.value
+    property alias cfg_copyToClipboard: copyToClipboard.checked
 
 
     property int textfieldWidth: theme.defaultFont.pointSize * 30
@@ -42,6 +43,12 @@ Item {
 	  
 	  stepSize: 1
 	  Layout.columnSpan: 2
+        }
+        
+        CheckBox {
+	  id: copyToClipboard
+	  Layout.columnSpan: 3
+	  text: i18n("Copy capture to clipboard")  
         }
     }
 }

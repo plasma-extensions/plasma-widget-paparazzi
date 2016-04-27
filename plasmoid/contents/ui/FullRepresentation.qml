@@ -14,7 +14,29 @@ ColumnLayout {
   
   DbusAdaptor {
     id: spectacleDbusAdaptor
+    // onSreenshotTaken: {console.log("The chart has been cleared")}
+    
+    
+    Component.onCompleted: {
+      console.log("Test !!! ")
+      console.log(JSON.stringify(spectacleDbusAdaptor))
+      for (var p in spectacleDbusAdaptor)
+	console.log(p + ": " + spectacleDbusAdaptor[p]);
+      
+      screenshotTaken.connect(handleScrennshotTaken)
+    }
+  
+    function handleScrennshotTaken(file) {
+      if (plasmoid.configuration.copyToClipboard) {
+	spectacleDbusAdaptor.copyCaptureToClipboard(file);
+	spectacleDbusAdaptor.eraseCapture(file);
+      }
+    }
+    
   }
+  
+  
+  
     
   Label {
       text: i18n("Take a screenshot!"); 

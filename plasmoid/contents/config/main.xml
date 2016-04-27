@@ -12,5 +12,8 @@
         <entry name="delayTime" type="Int">
             <default>2</default>
         </entry>
+	<entry name="copyToClipboard" type="Bool">
+            <default>true</default>
+        </entry>
     </group>
 </kcfg>
