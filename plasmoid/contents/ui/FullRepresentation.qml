@@ -52,6 +52,7 @@ ColumnLayout {
   color: "#3DAEE9"
   height: header_text.height + 8;
   Layout.fillWidth: true
+  Layout.fillHeight: true
   Text {
     id: header_text	
     
@@ -63,7 +64,7 @@ ColumnLayout {
     color: "white"
     
     text: i18n("Take a screenshot!"); 
-    font.family: "Noto Sans"; font.pointSize: 11;
+    font.family: "Noto Sans"; font.pointSize: 12;
     }
   }
 
